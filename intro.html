@@ -1,0 +1,34 @@
+<!-- This is a simple HTML document structure -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science trivia quiz</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <h1>Welcome to the Quiz</h1>
+    <p>This is a simple quiz application.</p>
+    <p>
+        Each question has to be answered in 10 seconds. If completed within 7 seconds, 3 points are added. <br>
+        If completed within 4 seconds, 2 points are added, else, 1 point is added.
+        <br> For 5 or more consecutive correct answers, 3 bonus points are awarded per correct answer. 
+        <br> For 10 or more consecutive correct answers, 5 bonus points are awarded.
+        <br> For 15 or more consecutive correct answers, 10 bonus points are awarded.
+        <br> For each wrong answer, 1 point is deducted.
+    </p>
+    <p>Click the button below to start the quiz.</p>
+    <p>Test your knowledge and have fun!</p>
+
+    <button type="button" onclick="startQuiz()">Start Quiz</button>
+    <script>
+        function startQuiz() {
+            window.location.href = "page.html";
+            // Add your quiz logic here
+        }
+    </script>
+
+</body>
+</html>
