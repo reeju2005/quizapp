@@ -1,0 +1,105 @@
+/* CSS for the quiz application */      
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a; /* Darker background for better contrast */
+    color: #ffffff; /* White text for improved readability */
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.quiz-container {
+    background: #fff;
+    color: #222; /* Set text color to dark for readability */
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(219, 26, 26, 0.753);
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.question {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.option {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.option:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.timer {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #ff5722;
+}
+
+.result {
+    font-size: 1.5em;
+    color: #4caf50;
+    display: none;
+}
+
+.restart-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: none;
+
+}
+.end-btn {
+    background-color: #2e11d3;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+}
+.restart-btn:hover {
+    background-color: #0056b3;
+}
+.end-btn:hover {
+    background-color: #ff5722;
+}
