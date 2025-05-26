@@ -223,14 +223,14 @@ function checkAnswer(selectedOption) {
     loadQuestion();
 }
 
-//The function to create bonus based on time left
+//The function to create bonus based on number of consecutive correct answers
 function createBonus(consecutiveQ) {
-    if (consecutiveQ >= 5) {
-        score += 3;
+    if (consecutiveQ >= 15) {
+        score += 10;
     } else if (consecutiveQ >= 10) {
         score += 5;
-    } else if (consecutiveQ >= 15) {
-        score += 10;
+    } else if (consecutiveQ >= 5) {
+        score += 3;
     }
 }
 
